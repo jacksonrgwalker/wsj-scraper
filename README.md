@@ -3,8 +3,6 @@
 This code can be used to scrape article metadata from the Wall Street Journal. For now, consider it a work in progress.
 This scraper was written in vanilla python with requests and is meant to be run locally with a single thread due to banning/rate limiting concerns. One could easily extend the scraping strategy with proxies or distributed clients to speed up the process. 
 
-This is for educational purposes only. Please do not use this code to scrape the Wall Street Journal.
-
 ## The Data
 The article metadata, which includes items such as 
  - headline
@@ -15,7 +13,8 @@ The article metadata, which includes items such as
  - subjects mentioned
  - company ticker symbols
  - etc.
-can be used for a variety of purposes. This code was originally written for a research project to use language models and text data to predict stock market movements.
+
+can be used for a variety of purposes. This code was originally written for a research project to use language models and text data to help predict stock market movements.
 
 # Set Up
 
@@ -26,6 +25,7 @@ To install the dependencies for this project, run the following command from the
 
 ```bash
 conda env create -f environment.yml
+conda activate wsj-scraper-env
 ```
 
 ## Running the Code
