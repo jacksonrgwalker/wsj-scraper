@@ -1,0 +1,6 @@
+pandas
+numpy
+ipykernel
+requests
+tqdm
+streamlit
